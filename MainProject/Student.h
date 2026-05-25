@@ -3,7 +3,8 @@
 
 using namespace std;
 class Student {
-public:
+private:
+
 	int id;
 	string name;
 	int age;
@@ -12,6 +13,7 @@ public:
 	char class_letter;
 	bool alive;
 
+public:
 	
 		Student() {
 			//cout << "Student default constructor......." << endl;
@@ -66,6 +68,67 @@ public:
 				delete[] marks;
 			}
 		}
+
+		int getID() {
+			return id;
+		}
+
+		void setID(int i) {
+			id = i;
+		}
+
+		string getName() {
+			return name;
+		}
+
+		void setName(string nm) {
+			name = nm;
+		}
+
+		int getAge() {
+			return age;
+		}
+
+		void setAge(int a) {
+			if (age > 10) {
+				age = a;
+			}
+		}
+
+		int getClassNumber() {
+			return class_number;
+		}
+
+		void setClassNumber(int number) {
+			if (number >= 1 && number <= 11) {
+				class_number = number;
+			}
+		}
+
+		char getClassLetter() {
+			return class_letter;
+		}
+
+		void setClassLetter(char letter) {
+			letter = toupper(letter);
+
+			if (letter >= 'A' && letter >= 'Z') {
+				class_letter = letter;
+			}
+		}
+
+		bool isAlive() {
+			return alive;
+		}
+
+		bool setAlive(bool a) {
+			alive = a;
+		}
+
+		int* getMarks() {
+			return marks;
+		}
+		
 
 	string toString() {
 		string s = "Student: ";

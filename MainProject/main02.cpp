@@ -12,9 +12,9 @@ int main() {
 
 	delete[] array;*/
 
-	Student alex{10, "Alex", 14, 9, 'A', 1, 1};
+	Student* alex = new Student;
 
-	cout << alex.toString() << endl;
+	cout << alex->getAge()<< endl;
 
 
 	return 0;
