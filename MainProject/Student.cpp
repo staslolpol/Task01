@@ -109,7 +109,7 @@
 		return alive;
 	}
 
-	bool Student::setAlive(bool a) {
+	void Student::setAlive(bool a) {
 		alive = a;
 	}
 
