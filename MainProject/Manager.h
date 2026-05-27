@@ -1,8 +1,8 @@
 #pragma once
-#include "Student.h"
+#include "Group.h"
 
 class Manager
 {
 private:
-	double calculateAverageMark(Student** group, int size);
+	double calculateAverageMark(Group* group);
 };

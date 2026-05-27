@@ -19,13 +19,13 @@ public:
 	Student();
 
 	//canonical constructor
-	Student(int i, string nm, int ag, int number, char letter, int mrk, bool a);
-	Student(string nm, int ag);
+	Student(int i, string name, int age, int number, char letter, int mark, bool a);
+	Student(string name, int age);
 	Student(const Student& student);
 	~Student();
 	int getID();
 	string getName();
-	void setName(string nm);
+	void setName(string name);
 	int getAge();
 	void setAge(int a);
 	int getClassNumber();
@@ -33,9 +33,9 @@ public:
 	char getClassLetter();
 	void setClassLetter(char letter);
 	bool isAlive();
-	bool setAlive(bool a);
+	void setAlive(bool a);
 	int* getMarks();
-	void setMarks(int* ms, int c);
+	void setMarks(int* mark, int c);
 	int getCount();
 
 
