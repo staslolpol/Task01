@@ -10,6 +10,7 @@ public:
 	Manager() {
 		cout << "Defaut Manager constructor\n";
 	}
+
 	~Manager() {
 		cout << "Destructor Manager constructor\n";
 
