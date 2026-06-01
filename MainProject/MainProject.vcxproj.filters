@@ -62,7 +62,7 @@
     <ClCompile Include="main07.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="human.cpp">
+    <ClCompile Include="Human.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Employee.cpp">

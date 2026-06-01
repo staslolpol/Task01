@@ -136,7 +136,7 @@
   <ItemGroup>
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="Group.cpp" />
-    <ClCompile Include="human.cpp" />
+    <ClCompile Include="Human.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="main01.cpp" />
     <ClCompile Include="main02.cpp" />

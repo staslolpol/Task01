@@ -46,7 +46,7 @@ void Human::setAlive(bool a) {
 	}
 
 string Human::toString() {
-	string s = "Student: ";
+	string s = "Human: ";
 	s += name;
 	s += ", agee = " + to_string(age);
 	s += ", alive = ";

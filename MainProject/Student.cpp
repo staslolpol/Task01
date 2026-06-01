@@ -15,35 +15,34 @@ Student::Student() {
 }
 
 //canonical constructor
-Student::Student(int id, string name, int age, int number, char letter, int mark, bool alive) {
+Student::Student(int id, string name, int age, int number, char letter, int mark, bool alive)
+	: Human(name, age, alive) {
 	cout << "Canon. constructor... \n";
 	this->id = id;
-	//this->name = name;
-	//this->age = age;
+
 	class_number = number;
 	class_letter = letter;
 	marks = new int[3] {10, 4, 6};
 	count = 3;
-	//this->alive = alive;
 }
-Student::Student(string name, int age) : Student(name,age) {
-	
+Student::Student(string name, int age) : Student(name, age) {
+
 }
 
-//Student::Student(const Student& student) : Student(student.id, student.name, student.age
-//	, student.count, student.class_number, student.class_letter, student.alive) {
-//	//cout << "Copy constract \n";
-//	if (student.marks != NULL && student.count > 0) {
-//		count = student.count;
-//
-//		marks = new int[count];
-//
-//		for (int i = 0; i < count; i++)
-//		{
-//			marks[i] = student.marks[i];
-//		}
-//	}
-//}
+Student::Student(const Student& student) : Student(student.id, student.name, student.age
+	, student.count, student.class_number, student.class_letter, student.alive) {
+	//cout << "Copy constract \n";
+	if (student.marks != NULL && student.count > 0) {
+		count = student.count;
+
+		marks = new int[count];
+
+		for (int i = 0; i < count; i++)
+		{
+			marks[i] = student.marks[i];
+		}
+	}
+}
 
 Student::~Student() {
 	cout << "Student destractor..." << endl;

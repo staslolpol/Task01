@@ -2,7 +2,7 @@
 #include "Human.h"
 
 using namespace std;
-class Student {
+class Student : public Human{
 private:
 
 	int id;
@@ -16,12 +16,13 @@ public:
 	Student();
 
 	//canonical constructor
-	Student(int i, string name, int age, int number, char letter, int mark, bool a);
+	Student(int id, string name, int age, int number, char letter, int mark, bool alive);
 	Student(string name, int age);
 	//Student(const Student& student);
 	~Student();
-	int getID();
 
+
+	int getID();
 	int getClassNumber();
 	void setClassNumber(int number);
 	char getClassLetter();

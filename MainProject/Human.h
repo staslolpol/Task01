@@ -5,13 +5,14 @@ using namespace std;
 
 class Human
 {
-private:
+protected:
 	
-
-public:
 	string name;      //
 	int age;
 	bool alive;
+
+public:
+	
 
 	Human();
 	Human(string name, int age, bool alive);
