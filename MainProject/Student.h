@@ -1,3 +1,4 @@
+#pragma once
 #include "Human.h"
 
 using namespace std;
@@ -17,7 +18,7 @@ public:
 	//canonical constructor
 	Student(int i, string name, int age, int number, char letter, int mark, bool a);
 	Student(string name, int age);
-	Student(const Student& student);
+	//Student(const Student& student);
 	~Student();
 	int getID();
 
