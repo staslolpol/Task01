@@ -1,14 +1,14 @@
 #include "Student.h"
 
 Student::Student() {
-	//cout << "Student default constructor......." << endl;
+	cout << "Student default constructor......." << endl;
 	id = 0;
-	//name = "no name";
-	//age = 0;
+	name = "no name";
+	age = 0;
 	marks = NULL;
 	class_letter = '\0';
 	class_number = 0;
-	//alive = 1;
+	alive = 1;
 	count = 0;
 
 
@@ -26,7 +26,7 @@ Student::Student(int id, string name, int age, int number, char letter, int mark
 	count = 3;
 }
 Student::Student(string name, int age) : Student(name, age) {
-
+	
 }
 
 Student::Student(const Student& student) : Student(student.id, student.name, student.age
@@ -106,14 +106,14 @@ int Student::getCount() {
 string Student::toString() {
 	string s = "Student: ";
 	s += name;
-	//s += " [ " + to_string(id) + "]";
+	s += " [ " + to_string(id) + "]";
 	s += ", agee = " + to_string(age);
-	//s += ", class  =" + to_string(class_number) + to_string(class_letter);
+	s += ", class  =" + to_string(class_number) + to_string(class_letter);
 	s += ", marks = ";
-	/*for (int i = 0; i < count; i++)
+	for (int i = 0; i < count; i++)
 	{
 		s += " " + to_string(marks[i]);
-	}*/
+	}
 	s += ", alive = ";
 	s += (alive ? "yes" : "no");
 	return s;
