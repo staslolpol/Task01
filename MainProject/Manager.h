@@ -1,8 +1,17 @@
 #pragma once
-#include "Group.h"
+//#include "Group.h"
+#include "Employee.h"
 
 class Manager
 {
-private:
-	double calculateAverageMark(Group* group);
+public:
+	//double calculateAverageMark(Group* group);
+
+	Manager() {
+		cout << "Defaut Manager constructor\n";
+	}
+	~Manager() {
+		cout << "Destructor Manager constructor\n";
+
+	}
 };
